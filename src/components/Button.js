@@ -7,7 +7,8 @@ const Button = () => {
 const Wrapper = styled.button`
 	width: 100%;
 	color: #fff;
-	background-color: darkgreen;
+	background-color: #143642;
+	margin-block: 1rem;
 	padding: 0.75rem 1.5rem;
 	font-size: 1.2rem;
 	letter-spacing: 1.3px;

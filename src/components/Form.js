@@ -54,8 +54,8 @@ const Form = () => {
 	}
 
 	return (
-		<Wrapper>
-			<form className='form' onSubmit={handleSubmit}>
+		<>
+			<StyledForm onSubmit={handleSubmit}>
 				<h1>Contact us</h1>
 				{inputs.map((input) => (
 					<FormInput
@@ -66,22 +66,23 @@ const Form = () => {
 					/>
 				))}
 				<Button type='submit' />
-			</form>
-		</Wrapper>
+			</StyledForm>
+		</>
 	)
 }
 
-const Wrapper = styled.div`
+const StyledForm = styled.form`
+	width: 100%;
+	padding: 1.5rem 3rem;
+	background-color: #fff;
 	display: grid;
-	margin: 0 auto;
-	.form {
-		width: 300px;
-		padding: 1.5rem 3rem;
-		background-color: #fff;
-		display: grid;
-		place-items: center;
-		gap: 0.5rem;
-		box-shadow: 0 3px 25px 3px rgba(0, 0, 0, 0.1);
+	place-items: center;
+	gap: 0.5rem;
+	box-shadow: 0 3px 25px 3px rgba(0, 0, 0, 0.1);
+	border-radius: 0.3125rem;
+
+	h1 {
+		margin-block: 1rem;
 	}
 `
 
